@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamentos</title>
+
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/agendamentos.css">
+
+    <script src="./Scripts/scriptLogin.js" defer></script>
+    <script src="/Scripts/scriptAgendamentos.js" defer></script>
+</head>
+<body>
+    <header>
+        <figure>
+        <img class="imgIcones" src="./assets/logo_sus_contata.svg" alt="SUS-Contata_logo">
+        </figure>
+        <nav id="gradient-menu">
+            <ul id="menu-superior">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./agendamentos.html">Agendamentos</a></li>
+                <li><a href="./profile.html">Meu Perfil</a></li>
+                <li><a href="./login.html">Login/Logoff</a></li>
+                <!-- <input id="login-logoff" type="button" value="Login/Logoff"> -->
+            </ul>
+        </nav>
+
+    </header>
+    
+    <main id="agendamentos">
+        <div id="divFiltro">
+            <select name="filtroEspecialidade" id="filtroEspecialidade" class="filtroSelect">
+                <option value="">Selecione a especialidade</option>
+                <option value="alergologista">Alergologista</option>
+                <option value="pediatra">Pediatra</option>
+                <option value="psiquiatra">Psiquiatra</option>
+                <option value="ginecologista">Ginecologista</option>
+                <option value="neurologista">Neurologista</option>
+            </select>
+            <select name="filtroEProcedimento" id="filtroEProcedimento" class="filtroSelect">
+                <option value="">Selecione o procedimento</option>
+                <option value="cirurgia">Cirurgia</option>
+                <option value="consulta">Consulta</option>
+                <option value="exame">Exame</option>
+            </select>
+            <input id="filtro" type="text" placeholder="Digite a informação que deseja filtrar.">    
+            <button id="procurar" >🔎</button>
+            <input type="button" value="Histórico" id="historico">
+        </div>
+        
+        <section id="dialogo">
+            
+            <div id="compromissos">
+                <h2>Consultas agendadas</h2>
+                <div class="compromissos">
+                    <div  id="item1">
+                        <span class="titulo-agendamento" id="agendamento1"> </span>
+                        <pre id="descricao1">
+                            
+                        </pre>
+                        <div class="confirmacao">
+                            <input type="button" id="confirmar1" class="confirmar" value="Confirmar">
+                            <input type="button" id="cancelar1" class="cancelar" value="Cancelar">
+                            <input type="button" id="detalhes1" value="Detalhes" class="detalhes">
+                        </div>
+                    </div>
+                    <div id="divDetalhes1" style="display: none;">
+                        <h3>Tentativas de contato</h3>
+                        <span>dd/mm/aa - Tentativa de contato via</span>
+                        <span>dd/mm/aa - Tentativa de contato via</span>
+                        <span>dd/mm/aa - Tentativa de contato via</span>
+                        <span>dd/mm/aa - Tentativa de contato via</span>
+                        <span>dd/mm/aa - Tentativa de contato via</span>
+                    </div>
+                </div>
+                <div class="compromissos">
+                    <div  id="item2">
+                        <span class="titulo-agendamento" id="agendamento2"> </span>
+                        <pre id="descricao2">
+                            
+                        </pre>
+                        <div class="confirmacao">
+                            <input type="button" id="confirmar2" class="confirmar" value="Confirmar">
+                            <input type="button" id="cancelar2" class="cancelar" value="Cancelar">
+                            <input type="button" id="detalhes2" value="Detalhes" class="detalhes">
+                        </div>
+                    </div>
+                    <div id="divDetalhes2" style="display: none;">
+                        <h3>Tentativas de contato</h3>
+                        <span>dd/mm/aa - Tentativa de contato via</span>
+                        <span>dd/mm/aa - Tentativa de contato via</span>
+                        <span>dd/mm/aa - Tentativa de contato via</span>
+                        <span>dd/mm/aa - Tentativa de contato via</span>
+                        <span>dd/mm/aa - Tentativa de contato via</span>
+                    </div>
+                </div>
+                <div class="compromissos">
+                    <div  id="item3">
+                        <span class="titulo-agendamento" id="agendamento3"> </span>
+                        <pre id="descricao3">
+                            
+                        </pre>
+                        <div class="confirmacao">
+                            <input type="button" id="confirmar3" class="confirmar" value="Confirmar">
+                            <input type="button" id="cancelar3" class="cancelar" value="Cancelar">
+                            <input type="button" id="detalhes3" value="Detalhes" class="detalhes">
+                        </div>
+                    </div>
+                    <div id="divDetalhes3" style="display: none;">
+                        <h3>Tentativas de contato</h3>
+                        <span>dd/mm/aa - Tentativa de contato via</span>
+                        <span>dd/mm/aa - Tentativa de contato via</span>
+                        <span>dd/mm/aa - Tentativa de contato via</span>
+                        <span>dd/mm/aa - Tentativa de contato via</span>
+                        <span>dd/mm/aa - Tentativa de contato via</span>
+                    </div>
+                </div>
+            </div>
+            <div id="calendar">
+                <img id="calendar" src="./assets/calendario.png" alt="calendarIcon">
+            </div>
+            
+        </section>
+    </main>
+
+    <footer>
+        <ul id="menu-footer">
+            <li><a href="./agendamentos.html">Agendamentos</a></li>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./profile.html">Meu Perfil</a></li>
+            <li><a href="./login.html">Login</a></li>
+        </ul>
+
+        <div id="apoiadores">
+            <img src="./assets/apoiadores/apoiador1.png" alt="apoiador1" class="apoiadores">
+            <img src="./assets/apoiadores/apoiador2.png" alt="apoiador2" class="apoiadores">
+            <img src="./assets/apoiadores/apoiador3.png" alt="apoiador3" class="apoiadores">
+            <img src="./assets/apoiadores/apoiador4.png" alt="apoiador4" class="apoiadores">
+        </div>
+        <div id="contatos">
+            <ul>
+                <li><a target="_blank" href="https://facebook.com"><img src="assets/Facebook_f_logo_(2019).svg.webp" alt=""></a></li>
+                <li><a target="_blank" href="https://instagram.com"><img src="assets/instagram-icon-free-png.webp" alt=""></a></li>
+                <li><a target="_blank" href="https://linkedin.com"><img src="assets/linkedin-logo-png-1826.png" alt=""></a></li>
+            </ul>
+        </div>
+    </footer>
+    
+</body>
+</html>

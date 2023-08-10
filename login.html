@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/login.css">
+
+    <script src="./Scripts/scriptLogin.js" defer></script>
+    <script src="Scripts/scriptCidAdm.js" defer></script>
+</head>
+<body>
+    <header>
+        <figure>
+            <img class="imgIcones" src="./assets/logo_sus_contata.svg" alt="SUS-Contata_logo">
+        </figure>
+        <nav>
+            <ul id="menu-superior">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./agendamentos.html">Agendamentos</a></li>
+                <li><a href="./profile.html">Meu Perfil</a></li>
+                <li><a href="./login.html">Login/Logoff</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+        <div id="principal">  
+            <div id="logo">
+            <figure>
+                <img src="./assets/logo_sus_contata.svg" alt="SUSContata">
+            </figure>
+            </div>
+        </div>
+        <div id="botao">
+            <div id="infoLogin">
+                <label class="usuario" for="usuario">Usuário</label>
+                <input class="usuario" id="usuario" type="text">
+                <label class="senha" for="senha">Senha</label>
+                <input class="senha" id="senha" type="text">
+            </div>
+            <button id="conecta">Conectar</button>
+            <div id="radioLogin">
+                <label for="cidadao">Login Cidadão</label>
+                <input type="radio" name="optLogin" id="cidadao" value="cidadao" checked>
+                <label for="administrativo">Login Administrativo</label>
+                <input type="radio" name="optLogin" id="administrativo" value="administrativo">
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <ul id="menu-footer">
+            <li><a href="./agendamentos.html">Agendamentos</a></li>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./profile.html">Meu Perfil</a></li>
+            <li><a href="./login.html">Login</a></li>
+        </ul>
+
+        <div id="apoiadores">
+            <img src="./assets/apoiadores/apoiador1.png" alt="apoiador1" class="apoiadores">
+            <img src="./assets/apoiadores/apoiador2.png" alt="apoiador2" class="apoiadores">
+            <img src="./assets/apoiadores/apoiador3.png" alt="apoiador3" class="apoiadores">
+            <img src="./assets/apoiadores/apoiador4.png" alt="apoiador4" class="apoiadores">
+        </div>
+        <div id="contatos">
+            <ul>
+                <li><a target="_blank" href="https://facebook.com"><img src="assets/Facebook_f_logo_(2019).svg.webp" alt=""></a></li>
+                <li><a target="_blank" href="https://instagram.com"><img src="assets/instagram-icon-free-png.webp" alt=""></a></li>
+                <li><a target="_blank" href="https://linkedin.com"><img src="assets/linkedin-logo-png-1826.png" alt=""></a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

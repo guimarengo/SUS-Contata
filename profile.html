@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Perfil</title>
+
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/profile.css">
+    <script src="./Scripts/scriptLogin.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <figure>
+        <img class="imgIcones" src="./assets/logo_sus_contata.svg" alt="SUS-Contata_logo">
+        </figure>
+        <nav>
+            <ul id="menu-superior">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./agendamentos.html">Agendamentos</a></li>
+                <li><a href="./profile.html">Meu Perfil</a></li>
+                <li><a href="./login.html">Login/Logoff</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+        <div id="coluna1">
+            <div id="foto">
+                <figure>
+                    <img src="./assets/perfil.jpg" alt="Foto Paciente">
+                </figure>
+            </div>
+            <div id="informacoesPaciente">
+                <div>
+                    <label for="nome" id="nomePaciente">Nome completo:</label>
+                    <input type="text" placeholder="Valtinho da 2"> 
+                </div>
+
+                <div>
+                    <label for="email" id="emailPaciente">E-mail:</label>
+                    <input type="text" placeholder="Valtinhoda2@gmail.com">
+             
+                </div>
+                <div>
+                    <label for="telefone1" id="telefone1Paciente">Telefone 1:</label>
+                    <input type="text" placeholder="(15) 98154-8563">
+                </div>
+                <div>
+                    <label for="telefone2" id="telefone2Paciente">Telefone 2:</label>
+                    <input type="text" placeholder="(15) 3226-9678">
+           
+                </div> 
+            </div>
+        </div>
+        <div id="coluna2">
+            <h2>Contatos extra (reponsável ou auxiliar)</h2>
+            <div id="contatosDiv">
+                <div id="contato1">
+                    <select name="relacao" id="relacao">
+                        <option selected>Grau de parentesco</option>
+                        <option value="Pai">Pai</option>
+                        <option value="Mãe">Mãe</option>
+                        <option value="Filho(a)">Filho(a)</option>
+                        <option value="Tio(a)">Tio(a)</option>
+                        <option value="Cunhado(a)">Cunhado(a)</option>
+                        <option value="Amigo">Amigo</option>
+                    </select>
+                    <input type="text" placeholder="Nome e Sobrenome">
+                    <input type="text" placeholder="E-mail">
+                    <input type="text" placeholder="Telefone 1">
+                    <input type="text" placeholder="Telefone 2">
+                </div>
+                <div id="contato2">
+                    <select name="relacao" id="relacao">
+                        <option selected>Grau de parentesco</option>
+                        <option value="Pai">Pai</option>
+                        <option value="Mãe">Mãe</option>
+                        <option value="Filho(a)">Filho(a)</option>
+                        <option value="Tio(a)">Tio(a)</option>
+                        <option value="Cunhado(a)">Cunhado(a)</option>
+                        <option value="Amigo">Amigo</option>
+                    </select>
+                    <input type="text" placeholder="Nome e Sobrenome">
+                    <input type="text" placeholder="E-mail">
+                    <input type="text" placeholder="Telefone 1">
+                    <input type="text" placeholder="Telefone 2">                
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <ul id="menu-footer">
+            <li><a href="./agendamentos.html">Agendamentos</a></li>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./profile.html">Meu Perfil</a></li>
+            <li><a href="./login.html">Login</a></li>
+        </ul>
+
+        <div id="apoiadores">
+            <img src="./assets/apoiadores/apoiador1.png" alt="apoiador1" class="apoiadores">
+            <img src="./assets/apoiadores/apoiador2.png" alt="apoiador2" class="apoiadores">
+            <img src="./assets/apoiadores/apoiador3.png" alt="apoiador3" class="apoiadores">
+            <img src="./assets/apoiadores/apoiador4.png" alt="apoiador4" class="apoiadores">
+        </div>
+        <div id="contatos">
+            <ul>
+                <li><a target="_blank" href="https://facebook.com"><img src="assets/Facebook_f_logo_(2019).svg.webp" alt=""></a></li>
+                <li><a target="_blank" href="https://instagram.com"><img src="assets/instagram-icon-free-png.webp" alt=""></a></li>
+                <li><a target="_blank" href="https://linkedin.com"><img src="assets/linkedin-logo-png-1826.png" alt=""></a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
